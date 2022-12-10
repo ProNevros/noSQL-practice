@@ -49,7 +49,7 @@ module.exports = {
       )
   },
 
-  // Delete a student and remove them from the course
+  // Delete a thought from a user
   deleteThought(req, res) {
     Thought.findOneAndRemove({ _id: req.params.thought_Id })
       .then((thought) =>
@@ -74,7 +74,7 @@ module.exports = {
       });
   },
 
-  // Add an react to a thought
+  // Add a react to a thought
   addReact(req, res) {
     console.log('You are adding an assignment');
     console.log(req.body);
