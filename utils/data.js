@@ -1,118 +1,109 @@
-const names = [
-  'Aaran',
-  'Aaren',
-  'Aarez',
-  'Aarman',
-  'Aaron',
-  'Aaron-James',
-  'Aarron',
-  'Aaryan',
-  'Aaryn',
-  'Aayan',
-  'Aazaan',
-  'Abaan',
-  'Abbas',
-  'Abdallah',
-  'Abdalroof',
-  'Abdihakim',
-  'Abdirahman',
-  'Abdisalam',
-  'Abdul',
-  'Abdul-Aziz',
-  'Abdulbasir',
-  'Abdulkadir',
-  'Abdulkarem',
-  'Smith',
-  'Jones',
-  'Coollastname',
-  'enter_name_here',
-  'Ze',
-  'Zechariah',
-  'Zeek',
-  'Zeeshan',
-  'Zeid',
-  'Zein',
-  'Zen',
-  'Zendel',
-  'Zenith',
-  'Zennon',
-  'Zeph',
-  'Zerah',
-  'Zhen',
-  'Zhi',
-  'Zhong',
-  'Zhuo',
-  'Zi',
-  'Zidane',
-  'Zijie',
-  'Zinedine',
-  'Zion',
-  'Zishan',
-  'Ziya',
-  'Ziyaan',
-  'Zohaib',
-  'Zohair',
-  'Zoubaeir',
-  'Zubair',
-  'Zubayr',
-  'Zuriel',
-  'Xander',
-  'Jared',
-  'Courtney',
-  'Gillian',
-  'Clark',
-  'Jared',
-  'Grace',
-  'Kelsey',
-  'Tamar',
-  'Alex',
-  'Mark',
-  'Tamar',
-  'Farish',
-  'Sarah',
-  'Nathaniel',
-  'Parker',
+const users = [
+  {
+    "username": "FauxFalsetto",
+    "email": "mymomhasdementiaT_T@icloud.com",
+    "thoughts": [],
+    "__v": 0,
+    "friends": [],
+  },
+  {
+    "username": "Aurora Time",
+    "email": "bangingyourmom@myhouse.com",
+    "thoughts": [],
+    "__v": 0,
+    "friends": [],
+  },
+  {
+    "username": "Incognito",
+    "email": "batman69@robinshole.com",
+    "thoughts": [],
+    "__v": 0,
+    "friends": [],
+  },
+  {
+    "username": "Walter",
+    "email": "eyyboiiii@waddap.com",
+    "thoughts": [],
+    "__v": 0,
+    "friends": [],
+  },
+  {
+    "username": "Angie-chan",
+    "email": "pinknyanya@cake.com",
+    "thoughts": [],
+    "__v": 0,
+    "friends": [],
+  },
+
 ];
 
-const appDescriptions = [
-  'Decision Tracker',
-  'Find My Phone',
-  'Learn Piano',
-  'Starbase Defender',
-  'Tower Defense',
-  'Monopoly Money Manager',
-  'Movie trailers',
-  'Hello world',
-  'Stupid Social Media App',
-  'Notes',
-  'Messages',
-  'Email',
-  'Compass',
-  'Firefox',
-  'Running app',
-  'Cooking app',
-  'Poker',
-  'Deliveries',
+const thoughts = [
+  {
+    "thoughtText": "I think this is cool and based.",
+    "username": "Incognito",
+    "created_at": "",
+    "reacts": [
+      {
+      "reactBody": "I think you are wrong",
+      "react_Id": "FauxFalsetto",
+      "created_at":,
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "thoughtText": "Ayo, call me cute pls",
+    "username": "Angie-chan",
+    "created_at": "",
+    "reacts": [
+      {
+      "reactBody": "You are cute!",
+      "react_Id": "Walter",
+      "created_at":,
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "thoughtText": "ya wanna play games brah",
+    "username": "Walter",
+    "created_at": "",
+    "reacts": [
+      {
+      "reactBody": "",
+      "react_Id": "",
+      "created_at":,
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "thoughtText": "Post nut drinking",
+    "username": "Aurora",
+    "created_at": "",
+    "reacts": [
+      {
+      "reactBody": "",
+      "react_Id": "",
+      "created_at":,
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "thoughtText": "HullO",
+    "username": "FauxFalsetto",
+    "created_at": "",
+    "reacts": [
+      {
+      "reactBody": "Stop",
+      "react_Id": "",
+      "created_at":,
+      }
+    ],
+    "__v": 0
+  },
 ];
-
-// Get a random item given an array
-const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
-// Gets a random full name
-const getRandomName = () =>
-  `${getRandomArrItem(names)} ${getRandomArrItem(names)}`;
-
-// Function to generate random assignments that we can add to student object.
-const getRandomAssignments = (int) => {
-  const results = [];
-  for (let i = 0; i < int; i++) {
-    results.push({
-      assignmentName: getRandomArrItem(appDescriptions),
-      score: Math.floor(Math.random() * (99 - 70 + 1) + 70),
-    });
-  }
-  return results;
-};
 
 // Export the functions for use in seed.js
-module.exports = { getRandomName, getRandomAssignments };
+module.exports = { users, thoughts };
