@@ -46,7 +46,7 @@ const thoughts = [
       {
       "reactBody": "I think you are wrong",
       "react_Id": "FauxFalsetto",
-      "created_at":,
+      "created_at":"" ,
       }
     ],
     "__v": 0
@@ -59,7 +59,7 @@ const thoughts = [
       {
       "reactBody": "You are cute!",
       "react_Id": "Walter",
-      "created_at":,
+      "created_at":"",
       }
     ],
     "__v": 0
@@ -72,7 +72,7 @@ const thoughts = [
       {
       "reactBody": "",
       "react_Id": "",
-      "created_at":,
+      "created_at":"",
       }
     ],
     "__v": 0
@@ -85,7 +85,7 @@ const thoughts = [
       {
       "reactBody": "",
       "react_Id": "",
-      "created_at":,
+      "created_at":"",
       }
     ],
     "__v": 0
@@ -98,7 +98,7 @@ const thoughts = [
       {
       "reactBody": "Stop",
       "react_Id": "",
-      "created_at":,
+      "created_at":"",
       }
     ],
     "__v": 0
